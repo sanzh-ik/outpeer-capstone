@@ -219,5 +219,23 @@ __marimo__/
 # Streamlit
 .streamlit/secrets.toml
 
+<<<<<<< HEAD
 data/
 *.csv
+=======
+# Ignore raw data files and data directories
+data/
+*.csv
+*.zip
+*.tar.gz
+
+# Ignore model artifacts & binary files
+*.pkl
+*.joblib
+*.h5
+
+# Ignore environment files & cache
+.env
+__pycache__/
+.ipynb_checkpoints/
+>>>>>>> 1b170ecc49d4c829138d8deac7aace6f8f55523d
