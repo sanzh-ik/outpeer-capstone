@@ -34,7 +34,5 @@ def generate_applicant_narrative(row: pd.Series) -> str:
     return narrative
 
 def batch_generate_narratives(df: pd.DataFrame) -> pd.Series:
-    """
-    Vectorized map application across the dataframe.
-    """
+    
     return df.apply(generate_applicant_narrative, axis=1)
