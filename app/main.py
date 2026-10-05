@@ -17,7 +17,7 @@ def load_artifacts():
 
 tfidf, model, feature_cols = load_artifacts()
 
-st.title("💳 Microfinance Credit Risk & Decision Engine")
+st.title("Microfinance Credit Risk & Decision Engine")
 st.markdown("Automated underwriting platform with SHAP model explainability.")
 
 col1, col2 = st.columns([1, 2])
@@ -74,11 +74,11 @@ with col2:
     credit_score = int(850 - (pd_score * 550))
     
     if pd_score < 0.20:
-        badge = "🟢 APPROVED"
+        badge = "APPROVED"
     elif pd_score < 0.45:
-        badge = "🟡 MANUAL REVIEW"
+        badge = "MANUAL REVIEW"
     else:
-        badge = "🔴 DENIED"
+        badge = "DENIED"
         
     m1, m2, m3 = st.columns(3)
     m1.metric("Probability of Default (PD)", f"{pd_score:.2%}")
